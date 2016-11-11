@@ -551,9 +551,9 @@ ul.social li a.fa:hover { background-color: #333333 }
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #E5B112;
+    background-color: #f35b5b;
     padding: 25px;
-    border-bottom: 3px solid #996600;
+    border-bottom: 3px solid #a60f0f;
 }
 .nav-pills > li > a { border-radius: 4px }
 ul.features li span.fa {
@@ -930,12 +930,12 @@ ul.metas li a { color: #e5b112 }
 .contact-detail:hover i.fa { background-color: #333333 }
 form#contact-form { padding: 40px 0 }
 .contact form#contact-form {padding: 0}
-.form-control:focus {
+/*.form-control:focus {
     border-color: inherit;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
+}*/
 .form-control {
     display: block;
     width: 100%;
@@ -968,8 +968,14 @@ p.help-block.text-danger ul li {
 /* Footer */
 #tf-footer {
     padding: 3% 0 2% 0;
-    background-color: #e5b112;
     color: #ffffff;
+    background-color: #e5b112; /* For browsers that do not support gradients */
+    /*background: red;  For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, red, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, red, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, red, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, red, black); /* Standard syntax */
+}
 }
 ul.social li a i {
     font-size: 18px;
