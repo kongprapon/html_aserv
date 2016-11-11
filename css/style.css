@@ -33,7 +33,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #c92626;
+    color: #e7b2b2;
 }
 .highlight { color: #ee1616 }
 .clearfix:after {
@@ -971,10 +971,13 @@ p.help-block.text-danger ul li {
     color: #ffffff;
     background-color: #e5b112; /* For browsers that do not support gradients */
     /*background: red;  For browsers that do not support gradients */
-    background: -webkit-linear-gradient(top, red, black); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top, red, black); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top, red, black); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to top, red, black); /* Standard syntax */
+
+
+background: #e52d27; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #e52d27 , #b31217); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #e52d27 , #b31217); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
 }
 }
 ul.social li a i {
